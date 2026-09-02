@@ -35,8 +35,8 @@ let last_prompt = -1
 function pick_prompt() {
     let random_index;
     do {
-        random_index = Math.floor(Math.random() * prompt_array.length);
+        random_index = Math.floor(Math.random() * prompts.length);
     } while (random_index === last_prompt);
     last_prompt = random_index;
-    document.getElementById("prompt").innerHTML = prompt_array[random_index];
+    document.getElementById("prompt").innerHTML = prompts[random_index];
 }
